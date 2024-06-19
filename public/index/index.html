@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kosti Link</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="https://kit.fontawesome.com/5a56ec5bbc.js" crossorigin="anonymous"></script>
+        <h1>lnk.kosti.dev</h1>
+        <div>
+          <div class="input">
+            <label for="url" class="url_label">Enter URL</label>
+            <div class="input_line">
+              <input type="url" name="url" autocomplete="off" class="url_input">
+              <button class="submit" onclick="createURL()">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <dialog class="dialog">
+          <button class="close_button">
+            <i class="fa-solid fa-xmark close"></i>
+          </button>
+          <span>Short URL:</span>
+          <div class="output_line">
+            <input type="url" class="output_url" readonly="readonly" value="https://example.com">
+            <div class="button_container">
+              <button class="copy_button">
+                <i class="fa-regular fa-clone copy"></i>
+              </button>
+            </div>
+          </div>
+        </dialog>
+      </body>
+      <script src="script.js"></script>
+</html>
