@@ -1,4 +1,3 @@
-// dbConfig.js
 module.exports = {
     host: 'localhost',
     user: 'link',

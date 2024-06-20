@@ -1,4 +1,3 @@
-// dbConnection.js
 const mysql = require('mysql');
 const dbConfig = require('./dbConfig');
 
