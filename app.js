@@ -1,5 +1,3 @@
-// index.js
-
 const express = require('express');
 const connection = require('./dbConnection');
 
