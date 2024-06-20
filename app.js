@@ -3,7 +3,7 @@ const connection = require('./dbConnection');
 
 const path = require('path');
 const app = express();
-const port = 80;
+const port = 440;
 
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, 'public', 'index')));
@@ -30,7 +30,7 @@ app.get('/:code', async (req, res) => {
     if (url) {
         res.redirect(url);
     } else {
-        res.redirect('http://localhost');
+        res.redirect('https://lnk.kosti.dev');
     }
 });
 
