@@ -45,6 +45,7 @@ function activate() {
   document.querySelector(".url_input").classList.add("input_focused");
   document.querySelector(".line").classList.add("line_focused");
   document.querySelector(".submit").classList.add("submit_focused");
+  document.querySelector(".title").classList.add("title_focused");
   submit.disabled = false;
 }
 
@@ -57,6 +58,7 @@ function deactivate() {
   document.querySelector(".url_input").classList.remove("input_focused");
   document.querySelector(".line").classList.remove("line_focused");
   document.querySelector(".submit").classList.remove("submit_focused");
+  document.querySelector(".title").classList.remove("title_focused");
   submit.disabled = true;
 }
 

@@ -19,10 +19,14 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
 
-h1 {
+.title {
 
 color: var(--text);
 font-size: 46.205px;
+}
+
+.title_focused {
+    color: var(--acent);
 }
 
 .input {
