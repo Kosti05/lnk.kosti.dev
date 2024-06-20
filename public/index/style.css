@@ -20,9 +20,9 @@ transform: translate(-50%, -50%);
 }
 
 .title {
-
-color: var(--text);
-font-size: 46.205px;
+    color: var(--text);
+    font-size: 46.205px;
+    transition: 0.3s;
 }
 
 .title_focused {
