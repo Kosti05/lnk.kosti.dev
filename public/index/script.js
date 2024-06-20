@@ -11,11 +11,9 @@ async function createURL() {
         return;
     }
 
-    if (!url_input.value.includes("https://")) {
-        if (!url_input.value.includes("http://")) {
-            alert(forbiddenURL);
-            return;
-        }
+    if (!url_input.value.includes("https://") && !url_input.value.includes("http://")) {
+        alert(forbiddenURL);
+        return;
     }
 
     const url = "https://lnk.kosti.dev/create?url=" + url_input.value;
