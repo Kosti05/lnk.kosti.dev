@@ -19,6 +19,13 @@ app.get('/:code', async (req, res) => {
             res.sendFile(path.join(__dirname, 'public', 'error', '400.html'));
             return;
         }
+
+        if (!url.includes("https://") && !url.includes("http://")) {
+            res.status(400);
+            res.sendFile(path.join(__dirname, 'public', 'error', '400.html'));
+            return;
+        }
+        
         const url_code = generateCode();
         setURL(url, url_code);
         res.status(200).send(url_code);
