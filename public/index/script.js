@@ -18,7 +18,7 @@ async function createURL() {
         }
     }
 
-    const url = "http://localhost/create?url=" + url_input.value;
+    const url = "https://lnk.kosti.dev/create?url=" + url_input.value;
     try {
         const response = await fetch(url);
         if (response.ok) {
